@@ -1,8 +1,8 @@
 import express from 'express';
 
-import readingsRoute from './routes/readings.route.js';
-import usersRoute from './routes/users.route.js';
-import sensorsRoute from './routes/sensors.route.js';
+import readingsRoute from '../routes/readings.route.js';
+import usersRoute from '../routes/users.route.js';
+import sensorsRoute from '../routes/sensors.route.js';
 import cors from 'cors';
 
 const app = express();
