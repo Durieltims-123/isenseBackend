@@ -8,12 +8,12 @@ export const updateLastReading = async (req, res) => {
               sensorId: id,
             },
             data: {
-              smokeLevel: req.body.smokeLevel, 
+              smokeLevel: req.body.gasConcentration, 
             },
           });
           res.status(200).json(lastReading);
     } catch (error) {
-        console.log(err);
-    res.status(500).json({ message: "Failed to update Reading!" });
+        
+    res.status(500).json({ message: error });
     }
 };
